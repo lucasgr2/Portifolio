@@ -495,7 +495,7 @@
 
 /*  SECAO5 CONTATO */
 .contato {
-    background: linear-gradient(180deg, white 50%, var(--cor-primaria) 50%);
+    background: linear-gradient(180deg, var(--cor-terciaria) 50%, var(--cor-primaria) 50%);
 }
 
 .contato__container {

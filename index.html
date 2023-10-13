@@ -4,12 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio Lucas Gomes</title>
-    <!-- Fontes -->
+    <title>Portifolio|Lucas Gomes</title>
+    <!-- Font family Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Kablammo&family=Krona+One&family=Montserrat:wght@400;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <!-- Icones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -20,149 +19,167 @@
     <!-- Styles -->
     <link rel="stylesheet" href="css/reset-padrao.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive-version.css">
 </head>
 
 <body>
-    <header class="cabecalho">
-        <a class="cabecalho__logo" href="index.html">L<span>ucas </span>G.</a>
-        <div class="cabecalho__icon">
-            <span class="icon__span" id="cabecalho__icon1"></span>
-            <span class="icon__span" id="cabecalho__icon2"></span>
-            <span class="icon__span" id="cabecalho__icon3"></span>
+    <header id="header" class="header">
+        <div class="header__container">
+            <img class="header__logo" src="assets/logo_extend_dark.png" alt="">
+            <nav class="header__nav">
+                <a href="https://www.linkedin.com/in/lucas-gomes-6a2530207/"><i class="fa-brands fa-linkedin nav__icon" style="color: #141c3a;"></i></a>
+                <a href="https://www.instagram.com/lucasz_ribeir0/"><i class="fa-brands fa-instagram nav__icon" style="color: #141c3a;"></i></a>
+                <a href="https://github.com/lucasgr2"><i class="fa-brands fa-square-github nav__icon" style="color: #141c3a;"></i></a>
+            </nav>
         </div>
-
-        <nav class="cabecalho__menu ">
-            <a class="cabecalho__links__link" href="index.html">Inicio</a>
-            <a class="cabecalho__links__link" href="projetos.html">Projetos</a>
-            <a class="cabecalho__links__link" href="projetos.html">Projetos</a>
-            <a class="cabecalho__links__link" href="projetos.html">Projetos</a>
-            <a class="cabecalho__links__link" href="projetos.html">Projetos</a>
-        </nav>
     </header>
     <main>
-        <section class="introducao">
-            <div class="introducao__conteudo">
-                <h1 class="introducao__conteudo__titulo">Desenvolvedor FrontEnd.</h1>
-                <p class="introducao__conteudo__subtitulo">Eu sou apaixonado por criar aplicações web bonitas e simples
+        <section class="cape">
+            <div class="cape__content hidden">
+                <h1 class="cape__content__title">Desenvolvedor FrontEnd.</h1>
+                <p class="cape__content__subtitle">Eu sou apaixonado por criar aplicações web bonitas e simples
                     para os usuarios</p>
-
-                <img class="introducao__imagem" src="assets/Foto.jpeg" alt="">
+                <img class="cape__image" src="assets/self_front_circle.svg" alt="">
             </div>
-            <img class="introducao__svg" src="assets/hero-devices.svg" alt="">
-
+            <img class="cape__svg" src="assets/hero-devices.svg" alt="">
         </section>
-        <section class="sobremim">
-            <div class="sobremim__conteudo">
-                <h1 class="sobremim__conteudo__titulo">Olá, eu sou o Lucas. Prazer em conhecê-lo.</h1>
-                <p class="sobremim__conteudo__subtitulo">Sempre nutri uma paixão pela tecnologia em geral, mas foi em
-                    2020, quando iniciei minha jornada na faculdade de Análise e Desenvolvimento de Sistemas, que
-                    descobri minha verdadeira paixão pela programação. Atualmente, meu foco está em aprimorar minhas
-                    habilidades no desenvolvimento de websites atraentes e altamente usáveis para meus usuários. Embora
-                    não possua experiência profissional, estou constantemente engajado em projetos para aprender novas
-                    técnicas e aperfeiçoar meus conhecimentos.</p>
-            </div>
-        </section>
-        <section class="habilidades">
-            <div class="habilidades__container">
-                <h1 class="habilidades__container__titulo">Habilidades</h1>
-                <div class="habilidades__container__caixa">
-                    <div class="habilidades__container__caixa__backend">
-                        <img src="assets/novo-banco-de-dados.png" alt="">
-                        <h1>Desenvolvedor back-end</h1>
-                        <h2>Elevando ainda mais o nível dos meus sites com interações cliente servidor</h2>
-                        <p class="habilidades__p__1">Tenho experiencia com:</p>
-                        <p class="habilidades__p__2">Git<br> PHP<br> Laravel<br> Node.js<br> SQL</p>
+        <section class="aboutme">
+            <div class="aboutme__container hidden">
+                <div class="aboutme__text">
+                    <div class="title__global">
+                        <p class="title__global__subtitle">Quem eu sou?</p>
+                        <h1 class="title__global__title">Olá, eu sou o Lucas.</h1>
                     </div>
-                    <div class="habilidades__container__caixa__frontend">
-                        <img src="assets/web-design.png" alt="">
-                        <h1>Desenvolvedor front-end</h1>
-                        <h2>Gosto de codificar coisas do zero e gosto de dar vida às ideias no navegador.</h2>
-                        <p class="habilidades__p__1">Tenho experiencia com:</p>
-                        <p class="habilidades__p__2">HTML<br> CSS<br> JavaScript<br> Wordpress<br> Bootstrap</p>
+                    <p class="aboutme__paragraf">Sou um desenvolvedor FrontEnd apaixonado por criar interfaces e
+                        aplicações intuitivas
+                        e modernas para meus usuários usando <span>HTML, CSS e JavaScript.</span></p>
+                    <p class="aboutme__paragraf">Gosto de criar o design das minhas interfaces e deixá-las interativas
+                        tanto quanto
+                        gosto de codificá-las, por isso também possuo habilidades com <span>Figma e PHP.</span></p>
+                </div>
+                <div class="aboutme__boxs">
+                    <div class="aboutme__box">
+                        <i class="fa-solid fa-graduation-cap" style="color: #ccf381;"></i>
+                        <span>Cursando Análise e Desenvolvimento de Sistemas</span>
+                    </div>
+                    <div class="aboutme__box">
+                        <i class="fa-solid fa-briefcase" style="color: #ccf381;"></i>
+                        <span>10+ Projetos desenvolvidos</span>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="projetos">
-            <h1 class="projetos__titulo">
-                Meus principais projetos
-            </h1>
-            <p class="projetos__subtitulo">
-                Aqui estão alguns projetos que fiz para familiares, empresas e instituições da minha cidade, com intuito
-                de aprendizado.
-            </p>
-            <div class="projetos__container">
-                <div class="projetos__container__projeto">
-                    <figure>
-                        <img src="assets/Em Breve.svg" alt="">
-                        <figcaption>
-                            <h1>Em Breve</h1>
-                            <a href="">Visitar Site</a>
-                        </figcaption>
-                    </figure>
+        <section class="skills ">
+            <div class="skills__container hidden">
+                <div class="title__global">
+                    <p class="title__global__subtitle">O que sei fazer</p>
+                    <h1 class="title__global__title">Habilidades.</h1>
                 </div>
-                <div class="projetos__container__projeto">
-                    <figure>
-                        <img src="assets/Em Breve.svg" alt="">
-                        <figcaption>
-                            <h1>Em Breve</h1>
-                            <a href="">Visitar Site</a>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="projetos__container__projeto">
-                    <figure>
-                        <img src="assets/Em Breve.svg" alt="">
-                        <figcaption>
-                            <h1>Em Breve</h1>
-                            <a href="">Visitar Site</a>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="projetos__container__projeto">
-                    <figure>
-                        <img src="assets/Em Breve.svg" alt="">
-                        <figcaption>
-                            <h1>Em Breve</h1>
-                            <a href="">Visitar Site</a>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="projetos__container__projeto">
-                    <figure>
-                        <img src="assets/Em Breve.svg" alt="">
-                        <figcaption>
-                            <h1>Em Breve</h1>
-                            <a href="">Visitar Site</a>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="projetos__container__projeto">
-                    <figure>
-                        <img src="assets/Em Breve.svg" alt="">
-                        <figcaption>
-                            <h1>Em Breve</h1>
-                            <a href="">Visitar Site</a>
-                        </figcaption>
-                    </figure>
+                <div class="skills__grid">
+                    <div class="skill">
+                        <i class="fa-solid fa-object-ungroup" style="color: #6e07f3;"></i>
+                        <h3>Prototipagem</h3>
+                        <p>Um protótipo é fundamental para projetos, utilizando o figma consigo elabora toda a ideia do
+                            site
+                            antes de partir para o código.</p>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-mobile" style="color: #6e07f3;"></i>
+                        <h3>Responsividade</h3>
+                        <p>Um site responsivo se adapta automaticamente as dimensões da tela do dispositivo, oferecendo
+                            sempre a melhor qualidade.</p>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-hand-point-up" style="color: #6e07f3;"></i>
+                        <h3>Interatividade</h3>
+                        <p>A interatividade é importante para proporcionar uma experiência única ao usuário com
+                            animações
+                            suaves e esteticamente chamativas </p>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-user" style="color: #6e07f3;"></i>
+                        <h3>Minimalismo</h3>
+                        <p>Um site muito poluído acaba tirando a concentração do usuário do que realmente importa, por
+                            isso
+                            proponho layouts modernos e minimalistas que são acertivos.</p>
+                    </div>
+                    <div class="skills__icons">
+                        <p>O que utilizo.</p>
+                        <h3>Linguagens e Framework</h3>
+                        <div class="skills__icons__imgs">
+                            <img src="assets/tecnologis/html.svg" alt="">
+                            <img src="assets/tecnologis/css.svg" alt="">
+                            <img src="assets/tecnologis/JavaScript.svg" alt="">
+                            <img src="assets/tecnologis/Php.svg" alt="">
+                            <img src="assets/tecnologis/laravel.svg" alt="">
+                        </div>
+                        <h3>Versionamento e IDE</h3>
+                        <div class="skills__icons__imgs">
+                            <img src="assets/tecnologis/Git.svg" alt="">
+                            <img src="assets/tecnologis/VSCode.svg" alt="">
+                        </div>
+                        <h3>Prototipação e Design</h3>
+                        <div class="skills__icons__imgs">
+                            <img src="assets/tecnologis/Figma.svg" alt="">
+                            <img src="assets/tecnologis/Miro.svg" alt="">
+                            <img src="assets/tecnologis/canva-original.svg" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <button class="button2">
-                Veja mais Projetos
-            </button>
+        </section>
+        <section class="projects ">
+            <div class="projects__container hidden">
+                <div class="title__global">
+                    <p class="title__global__subtitle">Alguns projetos que fiz.</p>
+                    <h1 class="title__global__title">Meus Projetos.</h1>
+                </div>
+                <div class="projects__grid">
+                    <div class="projects__project">
+                        <img src="assets/projeto1.jpg" alt="">
+                        <div class="projects__name">
+                            <div class="bar"></div>
+                            <h3>Website para Contabilidade</h3>
+                        </div>
+                        <p>Site desenvolvido com Wordpress, Elementor e Css.</p>
+                        <a href="">Visitar</a>
+                    </div>
+                    <div class="projects__project">
+                        <img src="assets/projeto2.jpg" alt="">
+                        <div class="projects__name">
+                            <div class="bar"></div>
+                            <h3>Portfolio UI Design</h3>
+                        </div>
+                        <p>Protótipo desenvolvido para idealizar a criação dessa pagina utilizando Figma.</p>
+                        <a href="">Visitar</a>
+                    </div>
+                    <div class="projects__project">
+                        <img src="assets/projeto3.jpg" alt="">
+                        <div class="projects__name">
+                            <div class="bar"></div>
+                            <h3>Portfolio Dentista</h3>
+                        </div>
+                        <p>Portfolio criador para uma cirurgia dentista com intuito de ser uma apresentação, desenvolvido com HTML e Css.</p>
+                        <a href="">Visitar</a>
+                    </div>
+                </div>
+                <div class="projects__button">
+                    <button class="button2">
+                        <a href="https://github.com/lucasgr2">Veja mais Projetos</a>
+                    </button>
+                </div>
+            </div>
         </section>
         <section class="contato">
-            <div class="contato__container">
+            <div class="contato__container hidden">
                 <h1 class="contato__container__titulo">Iniciar um projeto</h1>
                 <p class="contato__container__subtitulo">Interessado em trabalhar juntos? Devemos nos conhecer, entre em
                     contato! </p>
-                <a href="" class="contato__container__botao">Vamos fazer isso</a>
+                <a href="https://wa.me/5533988976613" class="contato__container__botao">Vamos fazer isso</a>
             </div>
         </section>
     </main>
     <footer class="rodape">
-        <h1 class="footer__logo">Lucas.G</h1>
+        <img class="footer__logo" src="assets/logo_circle_ligth.png" alt="">
         <p class="footer__subtitulo">Vivendo, aprendendo e subindo de nível um dia de cada vez.</p>
         <div class="footer__sociais">
             <a href="https://github.com/lucasgr2"><img class="footer__sociais__i github" src="assets/github.png"
@@ -179,7 +196,9 @@
             <p class="footer__copyrite"> Feito por Lucas Gomes</p>
         </div>
     </footer>
-
+    <div id="retroceder" class="animate__animated animate__fadeInUp retroceder--disable">
+        <a href="#header"><i class="fa-solid fa-arrow-up" style="color: #f9f9f9;"></i></a>
+    </div>
 </body>
 
 <script src="js/script.js"></script>
